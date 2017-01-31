@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     component: LandingComponent
   },
   {
-    path: '',
+    path: 'roster',
     component: RosterComponent
   }
 

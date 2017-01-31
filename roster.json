@@ -6,14 +6,26 @@
     },
   {
     "title": "President",
-    "name": "",
-    "description": "",
+    "name": "Someone awesome",
+    "description": "does stuff",
     "id": "2"
     },
   {
     "title": "Vice President",
-    "name": "",
-    "description": "",
+    "name": "someone else",
+    "description": "does other things",
+    "id": "3"
+  },
+  {
+    "title": "Lackey",
+    "name": "Diego",
+    "description": "does the God-Emperor's bidding",
+    "id": "3"
+  },
+  {
+    "title": "Lackey",
+    "name": "Cody",
+    "description": "does the God-Emperor's bidding",
     "id": "3"
     }]
 }
