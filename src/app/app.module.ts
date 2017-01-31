@@ -14,6 +14,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AboutComponent } from './landing/about.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileEditComponent } from './profile/profile-edit.component';
+import { PrefPipe } from './pref.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     AdminComponent,
     AboutComponent,
     ProfileComponent,
-    ProfileEditComponent
+    ProfileEditComponent,
+    PrefPipe
   ],
   imports: [
     BrowserModule,

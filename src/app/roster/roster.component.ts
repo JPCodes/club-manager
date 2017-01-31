@@ -10,6 +10,7 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class RosterComponent implements OnInit {
+  filterByPreference: string = "all";
 
   constructor(private memberService: MemberService, private router: Router){}
 
@@ -23,5 +24,9 @@ export class RosterComponent implements OnInit {
   goToProfile(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
   };
+
+  onChange(option) {
+  this.filterByPreference = option;
+}
 
 }

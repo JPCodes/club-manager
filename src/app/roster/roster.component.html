@@ -1,6 +1,12 @@
 <h3>Member Roster</h3>
 
-<div *ngFor="let member of members | async"  class="panel panel-default">
+<select (change)="onChange($event.target.value)">
+  <option value="all" selected="selected">All Members</option>
+  <option value="paper">Paper</option>
+  <option value="plastic">Plastic</option>
+</select>
+
+<div *ngFor="let member of members | async | pref:filterByPreference"  class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToProfile(member)"><em>{{member.title}}</em></h3>
     <p>{{member.name}}</p>
