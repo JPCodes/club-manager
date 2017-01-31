@@ -1,0 +1,19 @@
+{ "members": [{
+    "title": "God-Emperor",
+    "name": "James",
+    "description": "The God-Emperor of the Politics club. Duties include overseeing of the President and Vice President.",
+    "id": "1"
+    },
+  {
+    "title": "President",
+    "name": "",
+    "description": "",
+    "id": "2"
+    },
+  {
+    "title": "Vice President",
+    "name": "",
+    "description": "",
+    "id": "3"
+    }]
+}
