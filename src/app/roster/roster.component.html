@@ -4,5 +4,8 @@
   <div class="panel-body">
     <h3><em>{{member.title}}</em></h3>
     <p>{{member.name}}</p>
+    <div *ngIf="currentRoute === '/admin'">
+      <p>Description: {{member.description}}</p>
+    </div>
   </div>
 </div>

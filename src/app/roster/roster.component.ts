@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Router } from '@angular/router';
 import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 
@@ -9,9 +10,11 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class RosterComponent implements OnInit {
-  members: FirebaseListObservable<any[]>;
+  
+  constructor(private memberService: MemberService, private router: Router){}
 
-  constructor(private memberService: MemberService){}
+  members: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   ngOnInit(){
     this.members = this.memberService.getMembers();
