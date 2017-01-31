@@ -1,7 +1,7 @@
 <h3>Member Roster</h3>
 
 <div *ngFor="let member of members | async"  class="panel panel-default">
-  <div class="panel-body">
+  <div class="panel-body" (click)="goToProfile(member)">
     <h3><em>{{member.title}}</em></h3>
     <p>{{member.name}}</p>
     <div *ngIf="currentRoute === '/admin'">

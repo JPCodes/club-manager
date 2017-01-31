@@ -10,7 +10,7 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class RosterComponent implements OnInit {
-  
+
   constructor(private memberService: MemberService, private router: Router){}
 
   members: FirebaseListObservable<any[]>;
@@ -18,6 +18,10 @@ export class RosterComponent implements OnInit {
 
   ngOnInit(){
     this.members = this.memberService.getMembers();
-  }
+  };
+
+  goToProfile(clickedMember) {
+    this.router.navigate(['members', clickedMember.$key]);
+  };
 
 }
