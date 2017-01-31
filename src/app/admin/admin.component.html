@@ -1,3 +1,28 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Initiate a New Member to the Club</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Initiate's Title:</label>
+        <br>
+        <input class="form-control" #newTitle>
+      </div>
+
+      <div>
+        <label>Initiate's Name:</label>
+        <br>
+        <input class="form-control" #newName>
+      </div>
+
+      <div>
+        <label>Initiate's Description (Duties, Responsibilities):</label>
+        <br>
+        <textarea class="form-control" #newDescription></textarea>
+        <br>
+        <button class="btn btn-primary" (click)="submitForm(newTitle.value, newName.value, newDescription.value); newTitle.value=''; newName.value=''; newDescription.value=''">Brand</button>
+      </div>
+    </div>
+  </div>
+</div>
