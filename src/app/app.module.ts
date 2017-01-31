@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AdminComponent } from './admin/admin.component';
 import { AboutComponent } from './landing/about.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileEditComponent } from './profile/profile-edit.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     RosterComponent,
     AdminComponent,
     AboutComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProfileEditComponent
   ],
   imports: [
     BrowserModule,
