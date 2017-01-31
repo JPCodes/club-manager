@@ -11,8 +11,8 @@ export class AdminComponent {
 
   constructor(private memberService: MemberService) { }
 
-  submitForm(title: string, name: string, description: string) {
-  var newMember: Member = new Member(title, name, description);
+  submitForm(title: string, name: string, description: string, preference: string) {
+  var newMember: Member = new Member(title, name, description, preference);
   this.memberService.addMember(newMember);
   }
 }

@@ -2,30 +2,35 @@
     "title": "God-Emperor",
     "name": "James",
     "description": "The God-Emperor of the Politics club. Duties include overseeing of the President and Vice President.",
+    "preference": "paper",
     "id": "1"
     },
   {
     "title": "President",
     "name": "Someone awesome",
     "description": "does stuff",
+    "preference": "plastic",
     "id": "2"
     },
   {
     "title": "Vice President",
     "name": "someone else",
     "description": "does other things",
+    "preference": "paper",
     "id": "3"
   },
   {
     "title": "Lackey",
     "name": "Diego",
     "description": "does the God-Emperor's bidding",
+    "preference": "plastic",
     "id": "3"
   },
   {
     "title": "Lackey",
     "name": "Cody",
     "description": "does the God-Emperor's bidding",
+    "preference": "paper",
     "id": "3"
     }]
 }

@@ -21,7 +21,13 @@
         <br>
         <textarea class="form-control" #newDescription></textarea>
         <br>
-        <button class="btn btn-primary" (click)="submitForm(newTitle.value, newName.value, newDescription.value); newTitle.value=''; newName.value=''; newDescription.value=''">Brand</button>
+
+      <div>
+        <label>Paper or Plastic?</label>
+        <br>
+        <input class="form-control" #newPreference>
+      </div>
+        <button class="btn btn-primary" (click)="submitForm(newTitle.value, newName.value, newDescription.value, newPreference.value); newTitle.value=''; newName.value=''; newDescription.value=''; newPreference.value=''">Brand</button>
       </div>
     </div>
   </div>

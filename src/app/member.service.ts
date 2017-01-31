@@ -27,7 +27,8 @@ export class MemberService {
   memberEntryInFirebase.update({
                               title: localUpdatedMember.title,
                               name: localUpdatedMember.name,
-                              description: localUpdatedMember.description
+                              description: localUpdatedMember.description,
+                              preference: localUpdatedMember.preference
                             });
                           }
 

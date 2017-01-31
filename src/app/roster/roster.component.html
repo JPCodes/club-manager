@@ -4,6 +4,7 @@
   <div class="panel-body">
     <h3 (click)="goToProfile(member)"><em>{{member.title}}</em></h3>
     <p>{{member.name}}</p>
+    <p>Prefers: {{member.preference}}</p>
     <div *ngIf="currentRoute === '/admin'">
       <p>Description: {{member.description}}</p>
       <app-profile-edit [selectedMember]="member"></app-profile-edit>

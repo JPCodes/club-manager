@@ -11,5 +11,8 @@
 <label>New Member Description:</label>
 <input [(ngModel)]="selectedMember.description">
 
+<label>New Member Preference:</label>
+<input [(ngModel)]="selectedMember.preference">
+
 <button (click)="updateMemberForm(selectedMember)">Update</button>
 <button (click)="deleteMemberForm(selectedMember)">Delete</button>
