@@ -10,12 +10,12 @@ export class MemberService {
     this.members = angularFire.database.list('/members')
    }
 
-   getMembers(){
-     return this.members;
-   }
+  getMembers(){
+    return this.members;
+  }
 
   addMember(newMember: Member) {
-  this.members.push(newMember);
+    this.members.push(newMember);
   }
 
   getMemberByID(memberID: number){
@@ -29,7 +29,12 @@ export class MemberService {
                               name: localUpdatedMember.name,
                               description: localUpdatedMember.description
                             });
-}
+                          }
+
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberByID(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 
 
 }

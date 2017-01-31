@@ -13,4 +13,10 @@ export class ProfileEditComponent {
   updateMemberForm(memberToUpdate){
   this.memberService.updateMember(memberToUpdate);
   }
+
+  deleteMemberForm(memberToDelete){
+  if(confirm("Are you sure you want to delete this item from the inventory?")){
+    this.memberService.deleteMember(memberToDelete);
+  }
+}
 }
